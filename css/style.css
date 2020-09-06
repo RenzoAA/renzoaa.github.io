@@ -45,6 +45,7 @@ body{
     width: 1.5rem;
     padding: 1.5rem;
     background: #34495E;
+    background: #111111;
     cursor: pointer;
     position: fixed;
     top: 0;
@@ -81,6 +82,7 @@ body{
     padding: 0;
     margin: 0;
     background: #34495E;
+    background: #111111;
     list-style: none;
     transform: translateX(-100vh);
     opacity: 0;
@@ -104,14 +106,19 @@ body{
     color: white;
     font-size: 18px;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 30%;
+    max-width: 150px;
+    justify-content: flex-start;
     height: 100%;
     align-items: center;
 }
+.menu-a i{
+    margin-right: 1rem;
+}
 .menu-a:hover{
-    background: steelblue;
+    /* background: steelblue; */
     transition: .5s;
+    padding-left: .5rem;
 }
 /* Content */
 .content{
@@ -119,8 +126,7 @@ body{
     background: #ebebeb;
 }
 header{
-
-    padding: 65px 0 75px;
+    padding: 40px 0 75px;
     width: var(--box-width);
     /* height: 100vh; */
     display: flex;
@@ -151,22 +157,24 @@ header{
     /* transform: translateY(-80px); */
 }
 .img-principal{
+    overflow: hidden;
     z-index: 1000;
     text-align: center;
     width: 65%;
     max-width: 350px;
     border-radius: 12px 12px 0 0;
-    background: rgba(0, 0, 0, .5);
+    /* background: rgba(0, 0, 0, .5); */
 }
 .img-principal img{
     border-radius: 50%;
     transform: translateY(18px);
 }
 .info-perfil{
-    width: 80%;
-    max-width: 400px;
-    background: #ffffff;
-    color : #34495E;
+    width: 75%;
+    max-width: 390px;
+    /* background: #ffffff; */
+    background: rgba(0, 0, 0, .7);
+    color : white;
     border-radius: 12px;
     padding: 1rem 1rem 1.5rem;
     display: flex;
@@ -181,23 +189,25 @@ header{
     z-index: 1000;
     font-size: 38px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 14px;
 }
 .info-perfil p{
     z-index: 1000;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 19px;
     letter-spacing: 1px;
 }
 .redes-sociales{
     width: 90%;
-    max-width: 410px;
+    max-width: 460px;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-evenly;
     border-radius: 12px;
     padding: 12px;
     background: #34495E;
+    background: #111111;
 }
 .redes-sociales i{
     color: white;
@@ -205,7 +215,7 @@ header{
     /* margin: 0 1.5rem; */
 }
 .content-info .vermas{
-    background: #34495E;
+    background: #111111;
     color: white;
     font-size: 18px;
     padding: 12px 32px;
@@ -281,22 +291,28 @@ header{
 .barra-progreso{
     width: 70%;
     height: 35px;
-    background: transparent;
-    border: 1px solid #34495E;
+    /* background: red; */
+    border: 1px solid  gray;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+    /* background: orange; */
+    color: orange;
 }
 .barra-progreso_animacion{
+    color: orange;
     transition: 1s all;
-    background: #34495E;
+    background: inherit;
     width: 0;
     height: 35px;
-    border: 1px solid #34495E;
+    border: 1px solid inherit;
     border-radius: 12px;
     transition-duration: 1.5s;
     /* transition-delay: .5s; */
     position: relative;
+}
+.barra-progreso_html5{
+    color: orange;
 }
 .barra-progreso:hover .barra-progreso_animacion{
     transform: translateX(0);
@@ -311,13 +327,15 @@ header{
     .nav{
         position: relative;
         transition: 1s;
-        width: 30%;
+        width: 25%;
+        max-width: 700px;
         height: 100%;
     }
     .menu-desktop{
         display: flex;
         height: 100vh;
-        width: 30%;
+        width: 25%;
+        max-width: 500px;
         justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;
@@ -325,6 +343,7 @@ header{
         margin: 0;
         list-style: none;
         background: #34495E;
+        background: #111111;
         position: fixed;
     }
     .menu-desktop li{
@@ -337,18 +356,23 @@ header{
         color: white;
         font-size: 18px;
         display: flex;
-        width: 100%;
-        justify-content: center;
+        width: 45%;
+        text-align: center;
+        justify-content: flex-start;
         height: 100%;
         align-items: center;
     }
+    .menu-desktop_a i{
+        margin-right : 1rem;
+    }
     .menu-desktop_a:hover{
-        background: steelblue;
+        /* background: steelblue; */
         transition: .5s;
+        padding-left: .5rem;
     }
     .content{
         transition: 1s;
-        width: 70%;
+        width: 75%;
     }
     .sobremi-svg{
         /* background: red; */
