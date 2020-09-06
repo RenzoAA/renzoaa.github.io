@@ -117,7 +117,7 @@ body{
     margin-right: 1rem;
 }
 .menu-a:hover{
-    background: steelblue;
+    /* background: steelblue; */
     transition: .5s;
     padding-left: .5rem;
 }
