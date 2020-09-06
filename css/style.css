@@ -70,7 +70,7 @@ body{
     display: none;
 }
 .menu{
-    width: 65%;
+    width: 70%;
     /* width: 335px; */
     max-width: 325px;
     top: 0;
@@ -107,7 +107,7 @@ body{
     color: white;
     font-size: 18px;
     display: flex;
-    width: 30%;
+    width: 140px;
     max-width: 150px;
     justify-content: flex-start;
     height: 100%;
@@ -117,7 +117,7 @@ body{
     margin-right: 1rem;
 }
 .menu-a:hover{
-    /* background: steelblue; */
+    background: steelblue;
     transition: .5s;
     padding-left: .5rem;
 }
