@@ -44,7 +44,6 @@ body{
     justify-content: center;
     width: 1.5rem;
     padding: 1.5rem;
-    background: #34495E;
     background: #111111;
     cursor: pointer;
     position: fixed;
@@ -71,7 +70,9 @@ body{
     display: none;
 }
 .menu{
-    width: 100%;
+    width: 65%;
+    /* width: 335px; */
+    max-width: 325px;
     top: 0;
     left: 0;
     height: 100vh;
