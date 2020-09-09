@@ -318,6 +318,65 @@ header{
 .barra-progreso:hover .barra-progreso_animacion{
     transform: translateX(0);
 }
+.trabajos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.trabajos-box{
+    padding: 32px 0;
+    width: 95%;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mobile-box{
+    width: 45%;
+    max-width: 190px;
+    margin-bottom: 2rem;
+}
+.mobile-box p{
+    text-align: center;
+    color: #262626;
+    font-family: raleway;
+    font-size: 18px;
+}
+.mobile{
+    width: 100%;
+    max-width: 190px;
+    /* width: ; */
+    height: 390px;
+    background: #fff;
+    border-radius: 30px;
+    margin-bottom: 1.4rem;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.screen{
+    /* position: relative; */
+    width: 90%;
+    max-width: 175px;
+    height: 300px;
+    transform: translateY(-5px);
+    background: #262626;
+}
+.home{
+    position: absolute;
+    bottom: 7px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #cecece;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
 @media screen and (min-width : 996px){
     .menu{
         display: none;
@@ -335,7 +394,7 @@ header{
     .menu-desktop{
         display: flex;
         height: 100vh;
-        width: 33%;
+        width: 30.5%;
         max-width: 340px;
         justify-content: space-between;
         align-items: stretch;
